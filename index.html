@@ -1,0 +1,144 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>STEVEN MATHEW | PORTFOLIO</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="rellax.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+
+<body onload="followMouse();">
+  <h3 class="rellax glitch" data-rellax-speed="0"> STEVEN</h3>
+  <h3 class="rellax glitch1" data-rellax-speed="0">MATHEW</h3>
+  <h1 class="line anim-typewriter" data-rellax-speed="0">High School // Computer Programmer</h1>
+  <h4 class="rellax japanese__can" data-rellax-speed="1">カナダ</h4>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STEVEN // MATHEW</h4>
+      </div>
+    </div>
+    <div class="scroll-line"></div>
+  </header>
+
+  <div class="wrap">
+    <div id="ball"></div>
+
+    <!-- letters -->
+    <!-- <div class="name">
+    <div class="letter1 rellax" data-rellax-speed="8">S</div>
+    <div class="letter2 rellax" data-rellax-speed="1">T</div>
+    <div class="letter3 rellax" data-rellax-speed="6">E</div>
+    <div class="letter4 rellax" data-rellax-speed="8">V</div>
+    <div class="letter5 rellax" data-rellax-speed="10">E</div>
+    <div class="letter6 rellax" data-rellax-speed="4">N</div>
+  </div> -->
+
+  <div class="rellax d1" data-rellax-speed="2">
+    <img src="assets/11.png" width="100%"/>
+  </div>
+
+  <div class="rellax d4" data-rellax-speed="3">
+    <img src="assets/33.png" width="90%" style="transform:rotate(5deg);"/>
+  </div>
+
+  <div class="rellax d2" data-rellax-speed="4">
+    <img src="assets/11.png" width="100%" style="transform:rotate(70deg);"/>
+  </div>
+
+  <div class="rellax d5" data-rellax-speed="5">
+    <img src="assets/11.png" width="40%" style="transform:rotate(-40deg);"/>
+  </div>
+
+  <div class="rellax d3" data-rellax-speed="10">
+    <img src="assets/44.png" width="100%"/>
+  </div>
+</div>
+
+<div class="text__wrap">
+  <h2 class="heading__top">WHO I AM</h2>
+  <div class="who__wrap">
+    <div class="who__name">
+      <h3 class="who__jp">スティーブン</h3>
+      <p class="who__en">STEVEN MATHEW</p>
+    </div>
+    <p class="who__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis, mauris vel pretium auctor, velit est molestie mi, id molestie leo nibh nec dui. Aenean pharetra sed elit a pharetra. Sed egestas semper pharetra.
+      <br>
+      Etiam et velit in velit finibus auctor quis eget nisi. Maecenas ut pellentesque magna. In enim nunc, auctor id velit vitae, gravida varius mauris. Pellentesque a auctor felis. Fusce eget tellus tellus. In semper nisi quis felis efficitur, sit amet viverra ligula tempus.
+    </p>
+  </div>
+  <div class="who__img">
+    <img src="assets/F1000027.jpg" width="30%"/>
+    <img src="assets/F1000027.jpg" width="30%"/>
+    <img src="assets/F1000027.jpg" width="30%"/>
+    <img src="assets/F1000027.jpg" width="30%"/>
+  </div>
+  <div class="rellax dust" data-rellax-speed="6">
+    <img src="assets/dust-1.png" width="120%">
+  </div>
+  <h2 class="heading__top2">PASSION</h2>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="rellax.js"></script>
+<!-- <script type="text/javascript">
+$('.rocks').backgroundMove({
+movementStrength: '50';
+});
+</script> -->
+<script>
+var rellax = new Rellax('.rellax');
+</script>
+<script>
+var $ = document.querySelector.bind(document);
+var $on = document.addEventListener.bind(document);
+
+var mouseX, mouseY;
+
+$on('mousemove', function(e) {
+  mouseX = e.clientX || e.pageX;
+  mouseY = e.clientY || e.pageY + document.body.scrollTop;
+});
+
+var ball = $('#ball');
+var x = void 0,
+y = void 0,
+dx = void 0,
+dy = void 0,
+tx = 0,
+ty = 0,
+key = -1;
+
+var followMouse = function followMouse() {
+  key = requestAnimationFrame(followMouse);
+
+  if (!x || !y){
+    x = mouseX;
+    y = mouseY;
+  } else {
+    dx = (mouseX - x) * 0.25;
+    dy = (mouseY - y) * 0.25;
+
+    if (Math.abs(dx) + Math.abs(dy) < 0.1){
+      x = mouseX;
+      y = mouseY;
+    } else {
+      x += dx;
+      y += dy;
+    }
+  }
+  ball.style.left = x + 'px';
+  ball.style.top = y + 'px';
+
+}
+</script>
+</body>
+</html>
