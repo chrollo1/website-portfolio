@@ -1,7 +1,7 @@
 # My website (W.I.P)
 - **to view the website, download the repository, save to a folder, and open index.html.**
 ### Features
-- *design*
+- **design**
     - *clean*
     - glitch effects to images and text
     - type writer style
