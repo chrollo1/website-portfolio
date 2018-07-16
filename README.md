@@ -5,5 +5,5 @@
     - *clean*
     - glitch effects to images and text
     - type writer style
-- parallax effects using rellax.js (https://dixonandmoe.com/rellax/)
+- parallax effects using rellax.js
 - *currently it is semi-responsive(?)*
