@@ -8,6 +8,6 @@
 - parallax effects using rellax.js
 - *currently it is semi-responsive(?)*
 
-![alt text](https://gyazo.com/e32eca51f68e48556ef3bf236e568df3)
+![alt text](https://media.giphy.com/media/3CWXLPuGOcqUdSRSlp/giphy.gif)
 
 *Yes, that's me as a child...*
