@@ -4,8 +4,6 @@
 ### Features
 - **design**
     - *clean*
-    - glitch effects to images and text
-    - type writer style
 - parallax effects using rellax.js
 - *currently it is semi-responsive(?)*
 
