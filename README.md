@@ -5,5 +5,5 @@
 - **design**
     - *clean*
 - parallax effects using rellax.js
-- *currently it is semi-responsive(?)*
+
 
