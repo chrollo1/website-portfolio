@@ -625,6 +625,7 @@ padding-top: 4%;
     /* filter: blur(2px); */
   }
 }
+
 @keyframes who__img-anim-2 {
   0% {
     clip: rect(99px, 9999px, 191px, 0);
@@ -765,25 +766,30 @@ padding-top: 4%;
     clip: rect(220px, 9999px, 62px, 0);
   }
 }
+
 .who__img > img {
   position: absolute;
   left: 69.75%;
   top: 215%;
   transform: translate(-50%, -50%);
 }
+
 .who__img > img:nth-child(2),
 .who__img > img:nth-child(3),
 .who__img > img:nth-child(4){
   clip: rect(0, 0, 0, 0);
 }
+
 .who__img > img:nth-child(2) {
   left: 69.68%;
   animation: who__img-anim-1 2s infinite linear alternate-reverse;
 }
+
 .who__img > img:nth-child(3) {
   left: 69.75%;
   animation: who__img-anim-2 3s infinite linear alternate-reverse;
 }
+
 .who__img > img:nth-child(4) {
   left: 69.86%;
   animation: who__img-anim-2 4s infinite linear alternate-reverse;
