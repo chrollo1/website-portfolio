@@ -1,4 +1,4 @@
-NEW DESIGN SOON
+OLD DESIGN: SEE NEW REPO
 ---
 # My website (W.I.P)
 ![alt text](https://media.giphy.com/media/2cdY3nCKm3HdYpi4G3/giphy.gif)
